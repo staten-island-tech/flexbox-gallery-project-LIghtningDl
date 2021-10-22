@@ -31,7 +31,19 @@ body {
 .child-1 ,.child-2 ,.child-3 {
   width: 28%;
   height: 55%;
-  border: 5px solid black;
-  margin-top: 1.75em;
-margin-bottom: 1.75em;
+  border: 3px solid black ;
+  text-align: center;
+  background-color: lightgray;
+  box-shadow: 4px 4px 8px;
+  margin-bottom: 3em;
+
+}
+
+
+#img-2{
+    width: 25rem;
+    height: 25rem;
+    border: 5px solid black;
+    margin-top: 1.75em;
+    margin-bottom: 1.75em;
 }
