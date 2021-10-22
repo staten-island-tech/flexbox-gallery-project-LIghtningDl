@@ -25,10 +25,10 @@ body {
 .parent {
     font-size: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
 }
-.child-1 ,.child-2 ,.child-3 {
+.child-1 {
   width: 28%;
   height: 55%;
   border: 3px solid black ;
@@ -38,9 +38,27 @@ body {
   margin-bottom: 3em;
 
 }
+.child-2 {
+    width: 28%;
+  height: 55%;
+  border: 3px solid black ;
+  text-align: center;
+  background-color: lightgray;
+  box-shadow: 4px 4px 8px;
+  margin-bottom: 3em; 
+}
+.child-3 {
+    width: 28%;
+    height: 55%;
+    border: 3px solid black ;
+    text-align: center;
+    background-color: lightgray;
+    box-shadow: 4px 4px 8px;
+    margin-bottom: 3em;
+}
 
 
-#img-2{
+  #img-2{
     width: 25rem;
     height: 25rem;
     border: 5px solid black;
