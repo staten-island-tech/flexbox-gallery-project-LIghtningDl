@@ -65,3 +65,35 @@ body {
     margin-top: 1.75em;
     margin-bottom: 1.75em;
 }
+.child:hover {
+  transform: scale(1.15);
+  transition: all 0.3s ease-in;
+}
+
+.main-header:hover {
+  transform: scale(1.25);
+  filter: opacity(0);
+}
+.main-header {
+  transition: all 0.3s ease-in-out;
+}
+
+.adult-1:hover{
+  border: lightgray;
+}
+
+#img-2:hover {
+  transition: all 0.3s ease-in-out;
+  filter: grayscale(100%);
+}
+.parent:hover  .child:not(:hover) {
+  opacity: 0.3s;
+  transform: scale(0.7);
+  transition: all 0.3s ease-in;
+}
+.animation {
+  height: 2rem;
+  width: 2rem;
+  animation: job 5s infinite;
+  position: absolute;
+}
