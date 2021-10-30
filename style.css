@@ -97,3 +97,12 @@ body {
   animation: job 5s infinite;
   position: absolute;
 }
+.img-2 {
+  font-size: 14px;
+  transition-property: font-size;
+  transition-duration: 4s;
+}
+
+.img-2:hover {
+  font-size: 36px;
+}
