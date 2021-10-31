@@ -1,99 +1,157 @@
-html ,
-body , 
+html,
+body,
 * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
-   font-size: 62.5%; 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 body {
-    background-color: aqua;
-    font-family: 'Merriweather', serif;
+  background-color: blue;
+  font-family: "Merriweather", sans-serif;
 }
 
 .main-header {
-    font-size: 10em;
-    text-align: center;
-    color: black;
-    border: 1rem solid black;
-    margin-left: 50rem;
-    margin-right: 50rem;
-    margin-top: 10rem;
-    margin-bottom: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  color: black;
+  border: 1rem solid black;
+  width: 40rem;
+  height: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
 }
 
 .parent {
-    font-size: 50px;
-    display: flex;
-    justify-content: space-between;
-
-}
-.child-1 {
-  width: 28%;
-  height: 55%;
-  border: 3px solid black ;
+  font-size: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
   text-align: center;
-  background-color: lightgray;
+  flex-wrap: wrap;
+}
+.child-1,
+.child-2,
+.child-3 {
+  width: 33rem;
+  height: 40rem;
+  border: 3px solid black;
+  text-align: center;
+  background-color: aqua;
   box-shadow: 4px 4px 8px;
   margin-bottom: 3em;
-
 }
-.child-2 {
-    width: 28%;
-  height: 55%;
-  border: 3px solid black ;
-  text-align: center;
-  background-color: lightgray;
+.adult-1 {
+  border: 3px solid black;
+  margin: 7px 7px 7px 7px;
+}
+
+.images {
+  width: 75%;
+  height: 50%;
+  border: 5px solid black;
+}
+.form::before {
+  content: "\2614";
+  font-size: 2rem;
+}
+.button {
+  font-size: 2rem;
   box-shadow: 4px 4px 8px;
-  margin-bottom: 3em; 
+}
+.button:hover {
+  transform: scale(0.75);
+  transition: all 0.3s ease-in-out;
+  border: 2px solid turquoise;
+}
+.images:hover {
+  transform: scale(1.1);
+  outline: 1rem solid rgb(red, green, blue);
+  transition: 0.5s;
+}
+.child-1:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.child-2:hover {
+  transform: translate(0.5rem, -1rem);
+  transition: 0.5s;
 }
 .child-3 {
-    width: 28%;
-    height: 55%;
-    border: 3px solid black ;
-    text-align: center;
-    background-color: lightgray;
-    box-shadow: 4px 4px 8px;
-    margin-bottom: 3em;
+  transform: rotate(1turn);
+  transition: 2s;
 }
-
-
-  #img-2{
-    width: 25rem;
-    height: 25rem;
-    border: 5px solid black;
-    margin-top: 1.75em;
-    margin-bottom: 1.75em;
-}
-.child:hover {
-  transform: scale(1.15);
-  transition: all 0.3s ease-in;
-}
-
 .main-header:hover {
-  transform: scale(1.25);
-  filter: opacity(0);
-}
-.main-header {
-  transition: all 0.3s ease-in-out;
-}
-
-.adult-1:hover{
-  border: lightgray;
-}
-
-#img-2:hover {
-  transition: all 0.3s ease-in-out;
-  filter: grayscale(100%);
-}
-.parent:hover  .child:not(:hover) {
-  opacity: 0.3s;
-  transform: scale(0.7);
-  transition: all 0.3s ease-in;
+  transform: scale(0.9);
+  transition: 0.5s;
 }
 .animation {
   height: 2rem;
   width: 2rem;
   animation: job 5s infinite;
   position: absolute;
+}
+
+@keyframes job {
+  0% {
+    left: 50%;
+    bottom: 98%;
+    background-color: turquoise;
+  }
+  25% {
+    left: 45%;
+    bottom: 90%;
+    background-color: white;
+  }
+  50% {
+    left: 50%;
+    bottom: 98%;
+    background-color: turquoise;
+  }
+  75% {
+    left: 55%;
+    bottom: 90%;
+    background-color: white;
+  }
+  100% {
+    left: 50%;
+    bottom: 98%;
+    background-color: turquoise;
+  }
+}
+
+@media (max-width: 1200px) {
+  .child {
+    width: 25%;
+    color: green;
+  }
+  .adult-1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .child {
+    width: 51%;
+    color: purple;
+  }
+  .adult-1 {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 400px) {
+  .child {
+    color: brown;
+  }
+  .adult-1 {
+    font-size: 1.4rem;
+  }
+  .main-header {
+    width: 75%;
+    font-size: 2rem;
+  }
+  .images {
+    height: 35%;
+  }
 }
